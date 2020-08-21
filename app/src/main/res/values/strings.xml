@@ -1,0 +1,51 @@
+<resources>
+	<string name="app_name">AirPlay Receiver Pro</string>
+	<string name="start_service">Set Service Status Running</string>
+	<string name="restart_service">Restart</string>
+	<string name="stop_service">Set Service Status Off</string>
+	<string name="help">How To Use This App</string>
+	<string name="contact">Contact Us</string>
+
+	<string name="svcstatus_label">Service Status :</string>
+	<string name="devname_label">Device Name :</string>
+	<string name="contact_content">Feel free to email us \nif you need help:</string>
+	<string name="contact_email">zenithtechnologyenterprises@gmail.com</string>
+
+	<string name="second">S</string>
+	<string name="separate"> / </string>
+	<string name="init_time">00:00</string>
+
+	<string name="load_image_fail">"image load fail"</string>
+	<string name="parse_image_fail">"image parse fail"</string>
+
+	<string name="toast_musicplay_fail">music play error</string>
+	<string name="toast_videoplay_fail">video play error</string>
+	<string name="video_loading">Loading…</string>
+	<string name="video_speed_unit_second">S</string>
+	<string name="buffering">Loading…</string>
+
+	<string name="mp_unknown_artist">Unknow Artist</string>
+	<string name="mp_unknown_album">Unknow Album</string>
+	<string name="mp_cant_find_lyrics">the lrc can\'t be found</string>
+	<string name="mp_lyrics_tips">***&#160;&#160;&#160;the lrc come from internet，just be reference&#160;&#160;&#160;***</string>
+
+	<string name="help_content">"Make sure your Fire TV and Apple device are connected to the same WiFi network and that the app says “Service Status: Running” at the bottom of the main page.
+
+To screencast from your Mac to Fire TV, go to System Preferences - Display and then select your Fire TV device’s name on the “AirPlay Display” drop-down menu at the bottom. Your device’s name will show up at the bottom of the AirPlay Receiver app.
+
+To screencast from your iPhone, swipe up, hit Screen Mirroring and then select your Fire TV device’s name.
+
+Known Issues:
+1. The app won’t mirror DRM content (this is content that is protected by digital rights management software) - what won't successfully mirror will partly depend on your Apple device (iPhone/iPad/Macbook). For example, airplaying Netflix/YouTube to your Fire TV will work from your Mac, but not from your iPhone. One workaround for that is to use your phone's browser to go to YouTube/Netflix, rather than using the YouTube/Netflix app, and then airplaying.
+
+2. Sometimes when you try to AirPlay from a laptop, there may be a router packet miscommunication resulting in the screen going black; simply end the AirPlay on your laptop (which will take you back to the main screen of the app on your Fire TV) and try again.
+
+3.There may be lag depending on your internet connection's strength.
+
+If it doesn’t seem to be working, we recommend trying to uninstall and reinstall the app or restarting your Fire TV.
+
+We are very happy to help with any other issues - please feel free to contact us at zenithtechnologyenterprises@gmail.com if you need help or want to share any other feedback
+
+We also deeply appreciate any reviews, as these help us continue to develop and improve the app."</string>
+
+</resources>

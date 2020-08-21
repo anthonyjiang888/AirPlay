@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	package="com.zenithairplayreceive.pro">
+
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+	<supports-screens
+		android:anyDensity="true"
+		android:largeScreens="true"
+		android:normalScreens="true"
+		android:smallScreens="true"
+		android:xlargeScreens="true" />
+
+	<uses-feature
+		android:name="android.hardware.microphone"
+		android:required="false" />
+
+	<uses-feature
+		android:name="android.hardware.touchscreen"
+		android:required="false" />
+	<!--
+		<uses-feature
+			android:name="android.software.leanback"
+			android:required="false" />
+	-->
+	<uses-feature
+		android:name="android.hardware.screen.portrait"
+		android:required="false" />
+
+	<application
+		android:allowBackup="true"
+		android:banner="@drawable/tvbanner"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme.NoActionBar"
+		android:usesCleartextTraffic="true"
+		tools:ignore="GoogleAppIndexingWarning"
+		android:name="com.zenithairplayreceive.pro.ApplicationAirPlay">
+
+		<meta-data
+			android:name="TD_APP_ID"
+			android:value="7F0D6361854462718E6EEB92BF280894" />
+		<meta-data
+			android:name="TD_CHANNEL_ID"
+			android:value="91.com" />
+
+		<service
+			android:name="com.zenithairplayreceive.pro.service.ServiceMediaRender"
+			android:enabled="true">
+			<intent-filter>
+				<action android:name="com.zenithairplayreceive.pro.start.engine" />
+				<action android:name="com.zenithairplayreceive.pro.restart.engine" />
+			</intent-filter>
+		</service>
+
+		<activity android:name=".activity.ActivityMain">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<!--<category android:name="android.intent.category.LEANBACK_LAUNCHER" />-->
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".activity.ActivityHelp">
+		</activity>
+
+		<activity
+			android:name="com.zenithairplayreceive.pro.activity.ActivityImage"
+			android:label="@string/app_name"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		</activity>
+
+		<activity
+			android:name="com.zenithairplayreceive.pro.activity.ActivityMusic"
+			android:launchMode="singleTask"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		</activity>
+
+		<activity
+			android:name="com.zenithairplayreceive.pro.activity.ActivityVideo"
+			android:launchMode="singleTask"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		</activity>
+
+		<activity
+			android:name="com.zenithairplayreceive.pro.activity.ActivityAirGl"
+			android:configChanges="keyboardHidden|orientation|screenSize"
+			android:launchMode="singleTask"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		</activity>
+
+	</application>
+
+</manifest>
